@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Batch Image Renamer</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Batch Image Renamer</h1>
+
+    <!-- Drag and Drop Zone -->
+    <div id="dropZone">Drop your images here or click to select</div>
+    <input type="file" id="fileInput" multiple accept="image/*" hidden>
+
+    <!-- File List -->
+    <h3>Selected Files:</h3>
+    <ul id="fileList"></ul>
+
+    <!-- Rename Form -->
+    <label>Old location: </label>
+    <input type="text" id="oldLocation" placeholder="atlanta-ga"><br><br>
+
+    <label>New location: </label>
+    <input type="text" id="newLocation" placeholder="dallas-tx"><br><br>
+
+    <button id="renameBtn">Rename & Download ZIP</button>
+
+    <p id="status"></p>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Made with ❤️ by Tushar
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
